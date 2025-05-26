@@ -1,0 +1,33 @@
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.detail-container img {
+  max-width: 300px;
+  margin: auto;
+}
+.detail-text {
+  padding-top: 1.5rem;
+}
+.price {
+  color: #e91e63;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.back-link {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #1a73e8;
+}
+@media (min-width: 768px) {
+  .detail-container {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+  .detail-text {
+    flex: 1;
+  }
+}

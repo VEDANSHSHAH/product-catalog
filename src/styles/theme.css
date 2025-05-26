@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #f7f7f7;
+  --text-color: #1c1c1c;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --primary: #1a73e8;
+  --accent: #e91e63;
+  --border: #ccc;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --card-shadow: rgba(255, 255, 255, 0.05);
+  --primary: #90caf9;
+  --accent: #f48fb1;
+  --border: #333;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.theme-toggle button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
